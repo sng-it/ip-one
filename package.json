@@ -1,0 +1,28 @@
+{
+    "dependencies": {
+        "animejs": "^3.0.1",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.3.1",
+        "node-sass": "^4.11.0",
+        "popper": "^1.0.1",
+        "popper.js": "^1.14.7",
+        "slack": "^11.0.2",
+        "slick-carousel": "^1.8.1"
+    },
+    "scripts": {
+        "sass": "node-sass resources/sass/style.sass public/css/style.css -w",
+        "sass-production": "node-sass resources/sass/style.sass public/css/style.css -w --output-style compressed",
+        "webpack": "./node_modules/.bin/webpack --hide-modules --mode=development -w"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "css-loader": "^0.28.11",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3"
+    }
+}
