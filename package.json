@@ -12,7 +12,8 @@
     "scripts": {
         "sass": "node-sass resources/sass/style.sass public/css/style.css -w",
         "sass-production": "node-sass resources/sass/style.sass public/css/style.css -w --output-style compressed",
-        "webpack": "./node_modules/.bin/webpack --hide-modules --mode=development -w"
+        "webpack": "./node_modules/.bin/webpack --hide-modules --mode=development -w",
+        "sass1": "node-sass resources/sass/new_style.sass qwe/css/style.css -w"
     },
     "devDependencies": {
         "babel-core": "^6.26.3",

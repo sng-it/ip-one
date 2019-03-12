@@ -1035,8 +1035,7 @@ pre {
   color: #212529; }
   .table th,
   .table td {
-    padding: 8px;
-    font-size: 18px;
+    padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
   .table thead th {
@@ -7363,3 +7362,155 @@ footer > div p {
   text-align: center;
   font-size: 3.5rem;
   margin: auto; }
+
+.inner_pages {
+  font-size: 22px; }
+
+.block {
+  padding: 13px 0; }
+
+.page_list {
+  padding: 0;
+  margin: 20px 0; }
+
+.page_list li {
+  padding-left: 20px;
+  position: relative;
+  text-transform: none !important;
+  list-style-type: none;
+  margin: 7px 0; }
+
+.page_list li:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #134094;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0; }
+
+.page_list.angle li:before {
+  content: '';
+  background: url("../img/angle.png") no-repeat;
+  background-size: 100%;
+  width: 7px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 0; }
+
+.page_list.medal li:before {
+  content: '';
+  background: url("../img/medal.png") no-repeat;
+  background-size: 100%;
+  width: 12px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0; }
+
+.faq h3 {
+  font-size: 36px;
+  margin-top: 70px;
+  margin-bottom: 16px;
+  padding-left: 15%; }
+
+.question {
+  padding-right: 120px; }
+
+.question h4 {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 28px; }
+
+.question .q_btn {
+  position: absolute;
+  top: 25px;
+  right: 20px; }
+
+.question .q_btn span {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  background: #e3000f;
+  transition: 300ms;
+  pointer-events: none; }
+
+.question .q_btn span:last-child {
+  transform: rotate(90deg); }
+
+.question .q_btn.change span:first-child {
+  transform: rotate(-45deg); }
+
+.question .q_btn.change span:last-child {
+  transform: rotate(45deg); }
+
+.question_text {
+  display: none;
+  padding-left: 30px;
+  padding-right: 100px; }
+
+.question_text p {
+  font-size: 22px; }
+
+.faq_img {
+  display: table;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+.left_title {
+  font-size: 36px;
+  margin: 40px 0; }
+
+.science h3 {
+  font-size: 36px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  text-align: center; }
+
+.science h5 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.science_person {
+  width: 100%;
+  border: 10px solid #134094;
+  margin-top: 20px; }
+
+.idea_icon {
+  width: 50%;
+  display: table;
+  margin: 0 auto; }
+
+.idea {
+  text-align: center; }
+
+.idea h5 {
+  font-size: 28px; }
+
+.idea img {
+  width: 200px; }
+
+.basket_icon {
+  width: 50%;
+  display: table;
+  margin: 0 auto; }
+
+.how_buy img {
+  width: 170px;
+  display: table;
+  margin: 0 auto; }
+
+.how_buy h6 {
+  font-size: 24px; }
