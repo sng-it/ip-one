@@ -22,4 +22,13 @@ $(document).ready(function(){
 		$input.change();
 		return false;
 	});
+	$('.click').on('click', function(){
+      var link = $(this).attr('href');
+      $(''+link).fadeIn();
+      $('.modal .close_btn').on('click', function(){
+          $(this).parents('.modal').fadeOut();
+          return false;
+      });
+      return false;
+   });
 })
