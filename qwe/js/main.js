@@ -34,4 +34,5 @@ $(document).ready(function(){
 	$('.country_list > li p').click(function(){
 		$(this).next('.city_list').slideToggle();
 	});
+	new WOW().init();
 })
