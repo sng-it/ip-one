@@ -31,4 +31,7 @@ $(document).ready(function(){
       });
       return false;
    });
+	$('.country_list > li p').click(function(){
+		$(this).next('.city_list').slideToggle();
+	});
 })
