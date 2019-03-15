@@ -441,7 +441,7 @@
 	font-size: 30px
 	line-height: 30px
 	margin-top: 20px
-.gift_block .price button
+.unit_buy
 	font-size: 28px
 	border: none
 	box-shadow: 0 0 5px -2px #333
@@ -453,7 +453,7 @@
 	display: inline-block
 	padding: 1px 15px
 	outline: none
-.gift_block .price button:hover
+.unit_buy:hover
 	box-shadow: 0 0 10px -3px #333
 .gift_block img
 	width: 100%
@@ -573,14 +573,14 @@
 .prod_unit-name
 	overflow: hidden
 	position: relative
-	margin-bottom: 60px
+	padding-bottom: 100px
 .prod_unit-name:before
 	content: ''
 	width: 2000px
 	height: 200px
 	background: #134094
 	position: absolute
-	top: 50%
+	top: calc(50% - 50px)
 	left: 20%
 	transform: translate(0,-50%)
 	z-index: -1
@@ -604,10 +604,8 @@
 	height: 200px
 	position: relative
 .prod_name-text
-	position: absolute
-	top: 50%
-	left: 80px
-	transform: translate(0, -50%)
+	margin-left: 30px
+	transform: translate(0,33%)
 .prod_name-text h4
 	color: #fff
 	font-size: 66px
@@ -628,34 +626,27 @@
 	margin-bottom: 0
 .prod_unit-info
 	width: 100%
-.prod_unit-info li 
+.prod_unit-info .nav-item
 	width: 19%
-	text-align: center
 	margin: 0 0.5%
+.prod_unit-info a 
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	text-align: center
 	background: #fff
 	border: none
-	box-shadow: 0 0 10px -2px #333
 	border-radius: 0
 	font-size: 22px
 	line-height: 22px
 	position: relative
 	height: 55px
 	transition: 300ms
-.prod_unit-info li:hover
-	box-shadow: 0 0 15px -3px #333
-.prod_unit-info li.active
-	background: #134094
-.nav-pills .nav-link
-	padding: 0
-	color: #134094
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%,-50%)
-	width: 100%
-	padding: 6px 15px
-.nav-pills .nav-link.active, 
-.nav-pills .show > .nav-link
-	background: transparent
+.prod_name-price .unit_buy
+	margin-left: 0
+	margin-top: 20px
 #lightgallery img
+	width: 100%
+#video-gallery img
 	width: 100%
