@@ -41,5 +41,6 @@ $(document).ready(function(){
 		$('.nav-item').removeClass('active');
 		$(this).parent('.nav-item').addClass('active');
 	});
+	lightGallery(document.getElementById('lightgallery'));
 	new WOW().init();
 })
