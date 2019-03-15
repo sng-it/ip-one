@@ -41,6 +41,15 @@ $(document).ready(function(){
 		$('.nav-item').removeClass('active');
 		$(this).parent('.nav-item').addClass('active');
 	});
+	 $('.main_slider').slick({
+	    slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: true,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 5000
+    });
 	lightGallery(document.getElementById('lightgallery'));
 	lightGallery(document.getElementById('video-gallery'));
 	new WOW().init();
