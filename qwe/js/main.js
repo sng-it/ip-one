@@ -36,6 +36,10 @@ $(document).ready(function(){
 	});
 	$('.show_btn').click(function(){
 		$(this).parent('.show_all').prev('.comment_hidden-block').slideToggle();
-	})
+	});
+	$('.nav-link').click(function(){
+		$('.nav-item').removeClass('active');
+		$(this).parent('.nav-item').addClass('active');
+	});
 	new WOW().init();
 })

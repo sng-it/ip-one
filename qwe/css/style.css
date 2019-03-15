@@ -8140,12 +8140,19 @@ footer > div p {
   margin: 0 0.5%;
   background: #fff;
   border: none;
-  box-shadow: 0 0 15px -2px #333;
+  box-shadow: 0 0 10px -2px #333;
   border-radius: 0;
   font-size: 22px;
   line-height: 22px;
   position: relative;
-  height: 55px; }
+  height: 55px;
+  transition: 300ms; }
+
+.prod_unit-info li:hover {
+  box-shadow: 0 0 15px -3px #333; }
+
+.prod_unit-info li.active {
+  background: #134094; }
 
 .nav-pills .nav-link {
   padding: 0;
@@ -8155,7 +8162,7 @@ footer > div p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0 15px; }
+  padding: 6px 15px; }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
