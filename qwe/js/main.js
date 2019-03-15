@@ -34,5 +34,8 @@ $(document).ready(function(){
 	$('.country_list > li p').click(function(){
 		$(this).next('.city_list').slideToggle();
 	});
+	$('.show_btn').click(function(){
+		$(this).parent('.show_all').prev('.comment_hidden-block').slideToggle();
+	})
 	new WOW().init();
 })
