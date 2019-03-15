@@ -7369,6 +7369,28 @@ footer > div p {
 .block {
   padding: 13px 0; }
 
+.check-list {
+  padding: 0;
+  margin: 20px 0; }
+
+.check-list li {
+  padding-left: 20px;
+  position: relative;
+  text-transform: none !important;
+  list-style-type: none;
+  margin: 7px 0; }
+
+.check-list li:before {
+  content: '';
+  background: url("../img/angle.png") no-repeat;
+  background-size: 100%;
+  width: 7px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 0; }
+
 .page_list {
   padding: 0;
   margin: 20px 0; }
@@ -8103,6 +8125,9 @@ footer > div p {
 
 .prod_unit-info p {
   margin-bottom: 25px; }
+
+.prod_unit-info p span {
+  font-weight: bold; }
 
 .prod_unit-info h6 {
   font-size: 24px;
