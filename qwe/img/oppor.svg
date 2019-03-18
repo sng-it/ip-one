@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>FAQ</title>
-	<link href="http://localhost/ip-one/qwe/css/style.css?q=616426542" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
-<body id="main">
-	<section class="container-fluid content inner_pages">
-		<div class="row">
-			<div class="col-md-2 border-right left-side toUp">
-				<h3 class="left_title">ИДЕЯ</h3>
-				<a href="#main" class="toUp_btn"></a>
-			</div>
-			<div class="col-md-10 toUp_page">
-				<svg class="svg_icon" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.9765mm" height="10.8545mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.9765mm" height="10.8545mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 23.53 23.27"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
@@ -38,10 +24,3 @@ viewBox="0 0 23.53 23.27"
   </g>
  </g>
 </svg>
-			</div>
-		</div>
-	</section>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="http://localhost/ip-one/qwe/js/main.js"></script>
-</body>
-</html>
