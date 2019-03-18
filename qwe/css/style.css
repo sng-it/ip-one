@@ -8202,5 +8202,12 @@ footer > div p {
 .left-side {
   padding-right: 35px; }
 
+.nav-link.submenu-nav {
+  transition: 300ms;
+  color: #ccc; }
+
+.svg_icon path {
+  transition: 300ms; }
+
 .svg_icon:hover path {
-  fill: red; }
+  fill: #ccc; }
