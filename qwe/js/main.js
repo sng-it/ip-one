@@ -45,6 +45,13 @@ $(document).ready(function(){
 		$('.nav-item').removeClass('active');
 		$(this).parent('.nav-item').addClass('active');
 	});
+	$('#num_of_bill, #ex_rate').change(function(){
+		var numOfBill = document.getElementById('num_of_bill').value;
+		var exRate = document.getElementById('ex_rate').value;
+		var sumOfBill = document.getElementById('sum_of_bill').value;
+		sumOfBill = exRate * numOfBill;
+		document.getElementById('sum_of_bill').value = sumOfBill;
+	});
 	 $('.main_slider').slick({
 	    slidesToShow: 1,
 		slidesToScroll: 1,
@@ -56,5 +63,4 @@ $(document).ready(function(){
     });
 	lightGallery(document.getElementById('lightgallery'));
 	lightGallery(document.getElementById('video-gallery'));
-	new WOW().init();
 })
