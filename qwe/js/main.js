@@ -66,18 +66,33 @@ $(document).ready(function(){
 			}
 		});
 	}
+	$('img').each(function(){
+		var img = $(this);
+		if(img.height() == 0){
+			img.hide();
+		}
+	});
+	var EqSize = $('.shop_list-img').width();
+	$('.shop_list-img').css({
+	    'height': EqSize + 'px'
+	});
+	$(window).on('resize', function(){
+		var EqSize = $('.shop_list-img').width();
+		$('.shop_list-img').css({
+		    'height': EqSize + 'px'
+		});
+	});
+	$('.shop_list-img a').on('mouseover', function(){
+		$(this).children('span').fadeIn();
+		$('.shop_list-img a').on('mouseleave', function(){
+			$(this).children('span').fadeOut();
+		});
+	});
 	$('*[data-href]').on('click', function() {
         window.location = $(this).data("href");
     });
-	 $('.main_slider').slick({
-	    slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		dots: true,
-		fade: true,
-		autoplay: true,
-		autoplaySpeed: 5000
-    });
 	lightGallery(document.getElementById('lightgallery'));
 	lightGallery(document.getElementById('video-gallery'));
+	$('.hello-slider').css('display', 'block');
+	new WOW().init();
 })
