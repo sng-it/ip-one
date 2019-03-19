@@ -54,6 +54,9 @@ $(document).ready(function(){
 	    }
 	    else  {$('.toUp_btn').hide();}
 	});
+	$('*[data-href]').on('click', function() {
+        window.location = $(this).data("href");
+    });
 	 $('.main_slider').slick({
 	    slidesToShow: 1,
 		slidesToScroll: 1,

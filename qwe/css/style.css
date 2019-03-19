@@ -8274,3 +8274,27 @@ footer > div p {
 
 #sum_of_bill {
   pointer-events: none; }
+
+[data-href] {
+  cursor: pointer; }
+
+.showTable {
+  width: 100%; }
+  .showTable td {
+    width: 25%;
+    text-align: center;
+    border: 6px solid #f5f6f6;
+    line-height: 24px;
+    vertical-align: top;
+    padding: 10px 0; }
+  .showTable .no_align {
+    text-align: left;
+    padding: 10px 25px; }
+  .showTable p {
+    margin-bottom: 0; }
+  .showTable img {
+    object-fit: contain;
+    height: 80px;
+    margin-bottom: 30px; }
+  .showTable span {
+    display: block; }
