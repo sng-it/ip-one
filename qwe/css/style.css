@@ -8270,7 +8270,8 @@ footer > div p {
   display: block;
   position: absolute;
   top: 15px;
-  right: 4px; }
+  right: 4px;
+  pointer-events: none; }
 
 #sum_of_bill {
   pointer-events: none; }
@@ -8298,3 +8299,7 @@ footer > div p {
     margin-bottom: 30px; }
   .showTable span {
     display: block; }
+
+.sticky {
+  position: fixed;
+  top: 0; }

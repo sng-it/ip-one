@@ -41,7 +41,7 @@ $(document).ready(function(){
 	$('.show_btn').click(function(){
 		$(this).parent('.show_all').prev('.comment_hidden-block').slideToggle();
 	});
-	$('#num_of_bill, #ex_rate').change(function(){
+	$('#num_of_bill, #ex_rate').bind('keyup change',function(){
 		var numOfBill = document.getElementById('num_of_bill').value;
 		var exRate = document.getElementById('ex_rate').value;
 		var sumOfBill = document.getElementById('sum_of_bill').value;
@@ -49,10 +49,19 @@ $(document).ready(function(){
 		document.getElementById('sum_of_bill').value = sumOfBill;
 	});
 	$(window).on('load scroll',function(){ 
-	    if ($(this).scrollTop() >= '10') {
+	    if ($(this).scrollTop() >= '300') {
 	        $('.toUp_btn').show();
 	    }
 	    else  {$('.toUp_btn').hide();}
+	});
+	$(window).scroll(function(){
+		var converter = document.getElementById("converter");
+		var sticky = converter.offsetTop;
+		if (window.pageYOffset > sticky) {
+	   		converter.classList.add("sticky");
+		} else {
+			converter.classList.remove("sticky");
+		}
 	});
 	$('*[data-href]').on('click', function() {
         window.location = $(this).data("href");
