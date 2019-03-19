@@ -8317,16 +8317,45 @@ footer > div p {
   top: 0; }
 
 .shop_block {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden; }
+  .shop_block:before {
+    content: '';
+    width: 100%;
+    height: 45%;
+    background: #134094;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    transform: translate(0, -50%);
+    z-index: -1; }
+  .shop_block h6 {
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #134094; }
+  .shop_block p {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+    color: #134094; }
+  .shop_block a:hover {
+    text-decoration: none; }
+    .shop_block a:hover .shop_list-img {
+      border-color: #134094; }
 
 .shop_list-img {
   position: relative;
-  width: 100%;
+  width: 95%;
+  display: table;
+  margin: 0 auto;
   border: 10px solid #94a7d6;
   border-radius: 50%;
-  overflow: hidden; }
-  .shop_list-img a {
-    display: block; }
+  overflow: hidden;
+  transition: 300ms; }
   .shop_list-img span {
     width: 100%;
     display: none;
@@ -8336,8 +8365,7 @@ footer > div p {
     background: rgba(51, 51, 51, 0.7);
     padding: 20px 0;
     color: #fff;
-    font-size: 28px;
-    transition: 300ms; }
+    font-size: 28px; }
   .shop_list-img img {
     width: 100%;
     position: absolute;

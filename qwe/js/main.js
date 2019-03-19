@@ -72,20 +72,20 @@ $(document).ready(function(){
 			img.hide();
 		}
 	});
-	var EqSize = $('.shop_list-img').width();
+	var EqualSize = $('.shop_list-img');
+	var BorderSize = EqualSize.css('borderWidth')
 	$('.shop_list-img').css({
-	    'height': EqSize + 'px'
+	    'height': EqualSize.width() + parseInt(BorderSize) * 2 + 'px'
 	});
 	$(window).on('resize', function(){
-		var EqSize = $('.shop_list-img').width();
 		$('.shop_list-img').css({
-		    'height': EqSize + 'px'
+		    'height': EqualSize.width() + parseInt(BorderSize) * 2 + 'px'
 		});
 	});
-	$('.shop_list-img a').on('mouseover', function(){
-		$(this).children('span').fadeIn();
-		$('.shop_list-img a').on('mouseleave', function(){
-			$(this).children('span').fadeOut();
+	$('.shop_list a').on('mouseover', function(){
+		$(this).find('span').slideDown(200);
+		$('.shop_list a').on('mouseleave', function(){
+			$(this).find('span').slideUp(200);
 		});
 	});
 	$('*[data-href]').on('click', function() {
