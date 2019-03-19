@@ -54,9 +54,9 @@ $(document).ready(function(){
 	    }
 	    else  {$('.toUp_btn').hide();}
 	});
+	var sticky = converter.offsetTop;
 	$(window).scroll(function(){
 		var converter = document.getElementById("converter");
-		var sticky = converter.offsetTop;
 		if (window.pageYOffset > sticky) {
 	   		converter.classList.add("sticky");
 		} else {
