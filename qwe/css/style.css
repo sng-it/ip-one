@@ -8281,6 +8281,10 @@ footer > div p {
 
 .showTable {
   width: 100%; }
+  .showTable tr[data-href]:hover {
+    background: #134094;
+    color: #fff;
+    transition: 300ms; }
   .showTable td {
     width: 25%;
     text-align: center;
@@ -8303,3 +8307,20 @@ footer > div p {
 .sticky {
   position: fixed;
   top: 0; }
+
+@media screen and (max-width: 1500px) {
+  .converter select,
+  .converter input,
+  .converter .part {
+    font-size: 18px; }
+  .converter .part {
+    height: 33px;
+    width: 60px; }
+  .converter input {
+    width: 80px; }
+  .select_box:before {
+    width: 10px;
+    top: 14px; }
+  .converter select {
+    padding-right: 15px;
+    padding-left: 10px; } }
