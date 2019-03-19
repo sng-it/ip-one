@@ -54,16 +54,18 @@ $(document).ready(function(){
 	    }
 	    else  {$('.toUp_btn').hide();}
 	});
-	var converter = document.getElementById("converter");
-	var sticky = converter.offsetTop;
-	var header = document.getElementById("header_menu").offsetHeight;
-	$(window).scroll(function(){
-		if (window.pageYOffset > sticky + header) {
-	   		converter.classList.add("sticky");
-		} else {
-			converter.classList.remove("sticky");
-		}
-	});
+	if($('#converter').length > 0){
+		var converter = document.getElementById("converter");
+		var sticky = converter.offsetTop;
+		var header = document.getElementById("header_menu").offsetHeight;
+		$(window).scroll(function(){
+			if (window.pageYOffset > sticky + header) {
+		   		converter.classList.add("sticky");
+			} else {
+				converter.classList.remove("sticky");
+			}
+		});
+	}
 	$('*[data-href]').on('click', function() {
         window.location = $(this).data("href");
     });
