@@ -91,6 +91,9 @@ $(document).ready(function(){
 	$('*[data-href]').on('click', function() {
         window.location = $(this).data("href");
     });
+    $('.search_btn').click(function(){
+    	return false;
+    });
 	lightGallery(document.getElementById('lightgallery'));
 	lightGallery(document.getElementById('video-gallery'));
 	$('.hello-slider').css('display', 'block');
