@@ -86,12 +86,13 @@ $(document).ready(function(){
         window.location = $(this).data("href");
     });
     $('.search_btn').click(function(){
-    	$('.search_form').css('width', '200px')
-    	$('.search_form input').fadeIn();
-    	$('.search_btn').click(function(){
-    		$('.search_form').css('width', '17px')
-    		$('.search_form input').fadeOut('fast');
-    	});
+		if($('.search_form').hasClass('search_expand')){
+			$('.search_form input').fadeOut('fast');
+			$('.search_form').removeClass('search_expand');
+		} else {
+    		$('.search_form input').fadeIn();
+    		$('.search_form').addClass('search_expand');
+		}
     	return false;
     });
 	lightGallery(document.getElementById('lightgallery'));
