@@ -66,12 +66,6 @@ $(document).ready(function(){
 			}
 		});
 	}
-	$('img').each(function(){
-		var img = $(this);
-		if(img.height() == 0){
-			img.hide();
-		}
-	});
 	var EqualSize = $('.shop_list-img');
 	var BorderSize = EqualSize.css('borderWidth')
 	$('.shop_list-img').css({
