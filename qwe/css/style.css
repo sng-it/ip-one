@@ -8469,10 +8469,11 @@ a {
     left: 0; }
     .search_form .search_btn:before {
       content: '\f002';
-      font-family: 'FontAwesome';
+      font-family: 'Font Awesome 5 Free';
       font-size: 18px;
       color: #134094;
-      font-style: normal; }
+      font-style: normal;
+      font-weight: 900; }
   .search_form input {
     width: 200px;
     display: none;
