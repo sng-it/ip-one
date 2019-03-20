@@ -8218,7 +8218,7 @@ footer > div p {
     margin-bottom: 5px; }
   .converter .convert_box {
     margin-bottom: 15px; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     .converter h6 {
       font-size: 24px; }
     .converter p {
@@ -8498,6 +8498,14 @@ a {
       color: #134094; }
     .search_form input::-ms-input-placeholder {
       color: #134094; }
+
+.search_room {
+  width: 100%;
+  padding-left: 30px; }
+  .search_room input {
+    width: 100%;
+    border: 1px solid #134094;
+    padding: 0 10px; }
 
 @media screen and (max-width: 1500px) {
   .converter select,
