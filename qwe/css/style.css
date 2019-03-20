@@ -8399,7 +8399,7 @@ footer > div p {
   .search_page .nav-item:last-child a {
     border-right: none; }
 
-.search_page a {
+.search_page .nav-item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8414,7 +8414,7 @@ footer > div p {
   border-radius: 0 !important;
   padding: 2px 1rem; }
   @media (min-width: 1500px) {
-    .search_page a {
+    .search_page .nav-item a {
       font-size: 22px;
       line-height: 22px; } }
 
