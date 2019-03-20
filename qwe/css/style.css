@@ -8432,7 +8432,8 @@ footer > div p {
 .search_box {
   font-size: 0;
   margin-bottom: 15px;
-  border-bottom: 1px solid #134094; }
+  border-bottom: 1px solid #134094;
+  height: 180px; }
   .search_box .search_box-img,
   .search_box .search_content {
     display: inline-block;
@@ -8449,6 +8450,9 @@ footer > div p {
       width: 100%; }
     .search_box .search_content h6 {
       font-size: 28px; }
+
+a {
+  color: #134094 !important; }
 
 @media screen and (max-width: 1500px) {
   .converter select,
