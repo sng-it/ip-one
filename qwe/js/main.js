@@ -86,6 +86,12 @@ $(document).ready(function(){
         window.location = $(this).data("href");
     });
     $('.search_btn').click(function(){
+    	$('.search_form').css('width', '200px')
+    	$('.search_form input').fadeIn();
+    	$('.search_btn').click(function(){
+    		$('.search_form').css('width', '17px')
+    		$('.search_form input').fadeOut('fast');
+    	});
     	return false;
     });
 	lightGallery(document.getElementById('lightgallery'));
