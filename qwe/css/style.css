@@ -8476,6 +8476,8 @@ a {
       color: #134094;
       font-style: normal;
       font-weight: 900; }
+    .search_form .search_btn:hover {
+      text-decoration: none; }
   .search_form input {
     width: 200px;
     display: none;
