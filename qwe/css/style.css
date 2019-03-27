@@ -8522,8 +8522,8 @@ a {
     font-family: 'FontAwesome';
     font-size: 14px;
     position: absolute;
-    top: -1px;
-    right: 0px;
+    top: 0px;
+    right: 1px;
     color: #134094; }
   .lang:hover {
     max-height: 150px; }
