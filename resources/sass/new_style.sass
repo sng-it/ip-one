@@ -960,7 +960,25 @@ a
 		width: 100%
 		border: 1px solid #134094
 		padding: 0 10px
-
+.lang
+	position: absolute
+	list-style: none
+	text-align: center
+	padding-right: 10px
+	padding-left: 0
+	max-height: 25px
+	overflow: hidden
+	font-size: 1rem
+	transition: 300ms
+	&:after
+		content: "\f0d7"
+		font-family: 'FontAwesome'
+		position: absolute
+		top: -1px
+		right: 0px
+		color: #000
+	&:hover
+		max-height: 150px
 @media screen and (max-width: 1500px )
 	.converter select,
 	.converter input,
