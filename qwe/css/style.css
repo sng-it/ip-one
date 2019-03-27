@@ -8520,10 +8520,11 @@ a {
   .lang:after {
     content: "\f0d7";
     font-family: 'FontAwesome';
+    font-size: 14px;
     position: absolute;
     top: -1px;
     right: 0px;
-    color: #000; }
+    color: #134094; }
   .lang:hover {
     max-height: 150px; }
 
